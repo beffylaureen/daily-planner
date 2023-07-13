@@ -13,16 +13,16 @@ $(function () {
   //
   $(".saveBtn").on("click" , function (){
     var key=$(this).parent().attr("id");
-    var value=$(this).siblings("textarea").val()
-    localStorage.setItem(key, value)
-    let appt= ['key', 'value']
-    localStorage.setItem('appt', JSON.stringify(appt))
-    console.log(this)
-    localStorage.getItem('key')
-    JSON.parse(localStorage.getItem('appt'))
+    var value=$(this).siblings("textarea").val();
+    localStorage.setItem(key, value);
     
   })
 
+  
+
+
+    
+  
 
   // TODO: Add code to apply the past, present, or future class to each time
 
@@ -55,6 +55,8 @@ $(function () {
 
 }
 colorHour ();
+
+
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
